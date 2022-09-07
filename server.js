@@ -19,3 +19,6 @@ app.use('/todos', todoRoutes)
 app.listen(process.env.PORT, ()=>{
     console.log('Server is running, you better catch it!')
 })    
+
+const port = process.env.PORT || 3000;
+app.listen(port);
