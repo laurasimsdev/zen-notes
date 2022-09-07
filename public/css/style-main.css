@@ -1,0 +1,107 @@
+body {
+  background-image: url(./sand.jpg);
+  background-size: cover;
+  color: rgb(51, 51, 51);
+}
+
+h1 {
+  font-family: "Aboreto", cursive;
+  text-align: center;
+  font-size: 40px;
+}
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+/* .not {
+  text-decoration: underline;
+} */
+
+i {
+  color: #008f83;
+  font-size: 12px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-top: 200px;
+  max-width: 850px;
+  background-color: rgb(245, 245, 245);
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+/* ul {
+  list-style-image: url('icon.gif');
+} */
+
+.form-submit-button {
+  margin-top: 5px;
+  margin-left: 20px;
+  background-color: #008f83;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu,
+    "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.form-submit-button:hover {
+  box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset,
+    rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+.form-submit-button:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  width: 92%;
+}
+
+.total-notes {
+  display: none;
+}
+
+.form {
+  width: 100%;
+}
+
+input.enter-note {
+  margin-left: 25px;
+  margin-right: 5px;
+  width: 55%;
+  padding: 14px;
+}
